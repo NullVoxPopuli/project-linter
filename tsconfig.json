@@ -2,22 +2,13 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "target": "esnext",
+    "target": "es6",
     "module": "commonjs",
-    "lib": ["es6", "dom"],
-    "declaration": true,
-    // "moduleResolution": "node",
+    "sourceMap": true,
+    "moduleResolution": "node",
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-
-    // "noImplicitReturns": true,
-    // "noImplicitThis": false,
-    // "noImplicitAny": true,
-    // "strictNullChecks": true,
-    // "forceConsistentCasingInFileNames": true,
-    // "suppressImplicitAnyIndexErrors": true,
-    // "noUnusedLocals": true
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*",
@@ -25,6 +16,6 @@
   ],
   "exclude": [
     "node_modules",
-    "dist",
+    "dist"
   ]
 }

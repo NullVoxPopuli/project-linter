@@ -1,0 +1,29 @@
+// Docs:
+// https://docs.renovatebot.com/configuration-options/
+{
+  "extends": [
+    "config:base"
+  ],
+  "automerge": true,
+  "masterIssue": true,
+  "ignorePaths": [
+      // Deployed once and forgotten
+  ],
+  "packageRules": [
+    ////////////////////////////////////////
+    // Grouping namespaced packages together
+    ////////////////////////////////////////
+    {
+      "packagePatterns": ["^@babel*"],
+      "groupName": "Babel Transpilation"
+    },
+    {
+      "packagePatterns": ["^@types\/*"],
+      "groupName": "Type Definitions"
+    },
+    {
+      "packagePatterns": [".*typescript-eslint.*"],
+      "groupName": "TypeScript ESLint"
+    }
+  ]
+}
